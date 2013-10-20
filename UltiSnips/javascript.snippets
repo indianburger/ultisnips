@@ -80,7 +80,7 @@ endsnippet
 # Snippets for Console Debug Output
 
 snippet cl "console.log"
-console.log(${1:"${2:value}"});
+console.log("hi", ${1:"${2:value}"});
 endsnippet
 
 snippet cw "console.warn"
@@ -113,6 +113,10 @@ endsnippet
 
 snippet ctrace "console.trace"
 console.trace();
+endsnippet
+
+snippet cx "console.log w/ name"
+console.log("${1}:", $1);
 endsnippet
 
 # AMD (Asynchronous Module Definition) snippets
